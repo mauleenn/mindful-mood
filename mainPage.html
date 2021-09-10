@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPage.css">
+
+    <title>How are you really feeling?</title>
+</head>
+
+<body>
+
+
+    <!-- Navbar Goes Here
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">How are you really feeling?</a>
+        </div>
+    </nav>
+    -->
+
+    <!-- Dashboard Start Here -->
+    <div id="content" class="container">
+        <div class="jumbotron bg-info text-white">
+            <h1 id="mainTitle">Hello!</h1>
+            <hr class="titles">
+            <p id="subTitle">Welcome to your daily mood tracker. How are you feeling today?</p>
+        </div>
+    </div>
+
+    <main id="nameHolder">
+        <form action="moodEntryPage.html" method="GET" id="userInfoForm">
+
+            <!--Name Form Field-->
+            <br>
+            <label for="name" id="nameLabel"> Name: </label>
+            <input type="text" name="name" required id="firstLastName" class="nameFormField" placeholder="What is your name?">
+            <br>
+
+            <!--Age Form Field-->
+            <br>
+            <label for="age" id="ageLabel"> Age: </label>
+            <input type="text" name="age" required id="userAge" class="ageFormField" placeholder="How old are you?">
+            <br>
+
+            <!--Submit Button-->
+            <br>
+            <button id="buttonID" type="submit" form="userInfoForm" value="Submit">Submit</button>
+            <br>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
